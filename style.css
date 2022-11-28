@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./multimedia/blur-clean.jpg);
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div {
+  position: relative;
+  border: 5px solid white;
+  color: white;
+  align-items: center;
+  padding: 6%;
+  width: 10vw;
+  height: 10vh;
+  font-size: 7vw;
+  flex: 0 1 auto;
+  right: -120vw;
+  display: flex;
+  justify-content: center;
+}
+
+main > div:nth-child(1) {
+  background-color: rgba(122, 11, 249, 0.4);
+  animation: atomskizdesna 1.5s ease-in-out 1.5s forwards;
+}
+
+main > div:nth-child(2) {
+  background-color: rgba(197, 122, 1, 0.4);
+  animation: atomskizdesna 1.5s ease-in-out 3s forwards;
+}
+
+main > div:nth-child(3) {
+  background-color: rgba(146, 0, 107, 0.4);
+  animation: atomskizdesna 1.5s ease-in-out 4.5s forwards;
+}
+
+@keyframes atomskizdesna {
+  100% {
+    right: 0vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

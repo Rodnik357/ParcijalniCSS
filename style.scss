@@ -1,0 +1,41 @@
+@use './base/colors';
+@use './base/reset';
+
+@import './abstracts/mixins';
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./multimedia/blur-clean.jpg);
+    background-size: cover;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+div {
+    @include divbox();
+}
+
+main > div:nth-child(1) {
+    background-color: colors.$primary-color1;
+    animation: atomskizdesna 1.5s ease-in-out 1.5s forwards;
+}
+
+main > div:nth-child(2) {
+    background-color: colors.$primary-color2;
+    animation: atomskizdesna 1.5s ease-in-out 3s forwards;
+}
+
+main > div:nth-child(3) {
+    background-color: colors.$primary-color3;
+    animation: atomskizdesna 1.5s ease-in-out 4.5s forwards;
+}
+
+
+@keyframes atomskizdesna {
+    100% { right: 0vw;}
+}

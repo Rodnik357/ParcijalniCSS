@@ -1,0 +1,16 @@
+@mixin divbox {
+  position: relative;
+
+  border: 5px solid white;
+  color: white;
+  align-items: center;
+  padding: 6%;  
+  width: 10vw;
+  height: 10vh;
+  font-size: 7vw;
+  flex: 0 1 auto;
+  right:-120vw;
+  display: flex;
+  justify-content: center;
+  
+}
